@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home - WebsforBizz IT Solution</title>
+  <link rel="icon" type="image/png" href="fevicon.png">
+
+
+
+
+
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      padding: 1.5rem 2rem;
+      color: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    nav {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #00d1b2;
+    }
+
+    .hero {
+      position: relative;
+      height: 85vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+      padding: 0 20px;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d') no-repeat center center/cover;
+      filter: blur(5px);
+      z-index: -2;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: -1;
+    }
+
+    .hero div {
+      background: rgba(255, 255, 255, 0.15);
+      padding: 2rem;
+      border-radius: 12px;
+      backdrop-filter: blur(6px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      background: linear-gradient(45deg, #00b894, #00cec9);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin: 1rem 0 2rem;
+      max-width: 600px;
+      color: #f1f1f1;
+    }
+
+    .btn {
+      padding: 0.8rem 2rem;
+      background: linear-gradient(135deg, #00b894, #00cec9);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .section {
+      max-width: 1100px;
+      margin: 4rem auto;
+      padding: 0 20px;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #2c3e50;
+    }
+
+    .section p {
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 4rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">WebsforBizz IT Solution</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h1>
+        WebsforBizz IT Solution<br>
+        <span style="font-size: 1.5rem; display: block; margin-top: 0.5rem;">Innovating Ideas into Digital Reality</span>
+      </h1>
+      <p>We build modern, secure, and scalable websites & applications that help your business grow.</p>
+      <a href="contact.html"><button class="btn">Let’s Work Together</button></a>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Who We Are</h2>
+    <p>At WebsforBizz IT Solution, we believe in transforming ideas into impactful digital experiences. Our team is dedicated to creating websites and applications that are modern, secure, and scalable. We value innovation, precision, and client satisfaction above all. Each project we undertake is a step toward solving real-world problems with smart, user-friendly technology. With strong collaboration and a creative mindset, we aim to help businesses establish their digital presence effectively. From design to deployment, we handle everything with attention to detail and passion for technology.</p>
+  </section>
+
+  <section class="section">
+    <h2>Our Vision</h2>
+    <p>Our vision is to create powerful digital solutions that solve real problems and help businesses succeed in the digital age. We believe in simplicity, innovation, and long-term value. Our goal is to be recognized for quality, honesty, and creative thinking. We strive to stay ahead of the curve by adopting the latest technologies and delivering exceptional results with every project. At WebsforBizz IT Solution, our focus is not just on building software — it's on building trust.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 WebsforBizz IT Solution. All rights reserved.</p>
+  </footer>
+</body>
+</html>
